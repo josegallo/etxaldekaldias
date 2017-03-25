@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
     if ($(this).scrollTop()>0)
     {
         $('div#Text-video-home-1').hide();
-        console.log("scrollTop > 0");
+        //console.log("scrollTop > 0");
     }
  	});
 

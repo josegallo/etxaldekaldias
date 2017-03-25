@@ -21,12 +21,18 @@ jQuery(document).ready(function($){
 
     if ($(this).scrollTop()>0)
     {
-        $('div#Text-video-home-1').fadeOut();
+        $('div#Text-video-home-1').hide();
+        console.log("scrollTop > 0");
     }
  	});
 
- 	//hide after seconds
- 	$('div#Text-video-home-1').delay(4000).fadeOut(400)
+	if ($(window).width() > 770) {
+	 	//hide after seconds
+	 	$('div#Text-video-home-1').delay(4000).fadeOut(400);
+ 	} else {
+ 		$('div#Text-video-home-1').hide();
+ 	}
+
 }); 	
 
 //bioseguridad
@@ -49,18 +55,17 @@ jQuery(document).ready(function($){
 
     if ($(this).scrollTop()>0)
      {
-        $('div#Text-video-bioseguridad').fadeOut();
+        $('div#Text-video-bioseguridad').hide();
      }
  	});
 
+ 	if ($(window).width() > 770) {
  	//hide after seconds
  	$('div#Text-video-bioseguridad').delay(4000).fadeOut(400)
+	} else {
+		$('div#Text-video-bioseguridad').hide();
+	}
+
 }); 	
 
 </script>
-
-
-
-
-
-

@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
 
 }); 	
 
-//bioseguridad
+//others 
 jQuery(document).ready(function($){
 	//get windows height
 	var windowHeight = $(window).height();
@@ -68,4 +68,15 @@ jQuery(document).ready(function($){
 
 }); 	
 
+jQuery(document).ready(function($){
+	$("div#side-header").css({ "max-width": 250 + "px"});
+	$(".result-preview").css({ "min-width": "250px"});
+}); 	
+
+//hide date on portofolio
+jQuery(document).ready(function($){
+	$(".fusion-carousel-meta , span.fusion-date").hide();
+}); 	
+
 </script>
+
